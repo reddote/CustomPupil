@@ -55,22 +55,6 @@ class CustomDetector(PupilDetectorPlugin):
 
         debug_img = frame.bgr if self.g_pool.display_mode == "algorithm" else None
 
-        '''result = self.__detector_2d.detect(
-            gray_img=frame.gray,
-            color_img=debug_img,
-            roi=Roi(*self.g_pool.roi.bounds),
-        )
-
-        eye_id = self.g_pool.eye_id
-
-        result["id"] = eye_id
-        result["topic"] = f"pupil.{eye_id}.{self.identifier}"
-        result["method"] = "custom-2d"
-        result["timestamp"] = frame.timestamp
-        result["norm_pos"] = normalize(
-            result["location"], (frame.width, frame.height), flip_y=True
-        )'''
-
         frame_data = np.asarray(bytearray(frame.jpeg_buffer), dtype=np.uint8)
         frame_bgr = cv2.imdecode(frame_data, cv2.IMREAD_COLOR)
 
