@@ -1,2 +1,7 @@
-# CustomPupilDetectorPlugin
-Custom Pupil Detection Plugin for Pupil Labs Software, edge detection and morphological transformation approach
+# Custom Pupil Detection
+Custom Pupil Detection Plugin for Pupil Labs Software.
+
+Used edge detection and morphological transformation approach for detection.
+
+# Install Instructions:
+https://docs.pupil-labs.com/developer/core/plugin-api/#adding-a-plugin
