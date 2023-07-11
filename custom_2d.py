@@ -103,8 +103,8 @@ class CustomDetector(PupilDetectorPlugin):
         if result['location'] is not None:
             result["norm_pos"] = normalize(result["location"], (frame.width, frame.height), flip_y=True)
 
-        with open(r'C:\Users\L1303\Desktop\pupilSource\output.txt', 'w') as f:
-            f.write(str(result))
+        ##with open(r'C:\Users\L1303\Desktop\pupilSource\output.txt', 'w') as f:
+          ##  f.write(str(result))
 
         return result
 
